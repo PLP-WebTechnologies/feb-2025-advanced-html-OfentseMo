@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced HTML5 Elements</h1>
+    
+    <h2>Topics Covered</h2>
+    <ol type="I">
+        <li>HTML5 Images</li>
+        <li>Lists</li>
+        <li>Tables</li>
+        <li>Forms and Input Types</li>
+        <li>Multimedia Elements</li>
+    </ol>
+    
+    <h2>Beautiful Scenery</h2>
+    <img src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful Scenery from Pexels" width="600">
+    
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Sipho Nkosi</td>
+            <td>123 Nelson Mandela Dr</td>
+            <td>+27712345678</td>
+            <td>sipho@example.com</td>
+        </tr>
+        <tr>
+            <td>Thabo Mokoena</td>
+            <td>456 Vilakazi St</td>
+            <td>+27798765432</td>
+            <td>thabo@example.com</td>
+        </tr>
+        <tr>
+            <td>Nomsa Dlamini</td>
+            <td>789 Freedom Ave</td>
+            <td>+27722334455</td>
+            <td>nomsa@example.com</td>
+        </tr>
+        <tr>
+            <td>Bongani Zulu</td>
+            <td>159 Ubuntu Rd</td>
+            <td>+27766778899</td>
+            <td>bongani@example.com</td>
+        </tr>
+        <tr>
+            <td>Lebo Khumalo</td>
+            <td>753 Heritage Blvd</td>
+            <td>+27744332211</td>
+            <td>lebo@example.com</td>
+        </tr>
+    </table>
+    
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="8">
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required> <label for="other">Other</label>
+        </div>
+        
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+        </select>
+        
+        <label>Interests</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="interests" value="coding"> <label>Coding</label>
+            <input type="checkbox" name="interests" value="music"> <label>Music</label>
+            <input type="checkbox" name="interests" value="sports"> <label>Sports</label>
+        </div>
+        
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions
+        </label>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
